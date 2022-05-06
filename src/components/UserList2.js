@@ -9,9 +9,9 @@ const UserList = () => {
 
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   // dispatch(fetchAllUsers());
-  // }, [dispatch])
+  useEffect(() => {
+    dispatch(fetchAllUsers());
+  }, [dispatch])
 
   return (
     <div className="container mt-4">
