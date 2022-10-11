@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 // redux
-import { fetchAllUsers } from '../store/slices/users';
+// import { fetchAllUsers } from '../store/slices/users/index_qqqq';
+import { fetchAllUsers } from '../store/slices/users/actions';
 import { useDispatch, useSelector } from 'react-redux';
 
 const UserList = () => {
 
-  const { list: users } = useSelector(state => state.users);
+  const  {list: users}  = useSelector(state => state.users);
 
   const dispatch = useDispatch();
 

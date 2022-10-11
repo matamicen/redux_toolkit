@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 // redux
-import { fetchAllUsers } from '../store/slices/users';
+// import { fetchAllUsers } from '../store/slices/users';
+import { fetchAllUsers } from '../store/slices/users/actions'
 import { useDispatch, useSelector } from 'react-redux';
 
 const UserList = () => {
